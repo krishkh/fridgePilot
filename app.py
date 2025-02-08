@@ -9,7 +9,7 @@ from pantry import pantry_bp
 from others import others_bp
 from prediction import prediction_bp
 
-# from recipe_prediction import recipe_bp
+from recipe_prediction import recipe_bp
 
 # Load environment variables
 load_dotenv()
@@ -52,7 +52,7 @@ app.register_blueprint(auth_bp, url_prefix="/auth")
 app.register_blueprint(pantry_bp, url_prefix="/pantry")
 app.register_blueprint(others_bp, url_prefix="/others")
 app.register_blueprint(prediction_bp, url_prefix="/prediction")
-# app.register_blueprint(recipe_bp, url_prefix="/recipe")
+app.register_blueprint(recipe_bp, url_prefix="/recipe")
 
 # Run the app
 if __name__ == "__main__":
