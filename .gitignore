@@ -29,7 +29,3 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local
-
-# Model files and large data
-*.pkl
-*.json
