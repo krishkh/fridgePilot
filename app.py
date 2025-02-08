@@ -8,7 +8,8 @@ from auth import auth_bp
 from pantry import pantry_bp
 from others import others_bp
 from prediction import prediction_bp
-from recipe_prediction import recipe_bp
+
+# from recipe_prediction import recipe_bp
 
 # Load environment variables
 load_dotenv()
