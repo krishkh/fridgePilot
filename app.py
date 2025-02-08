@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 from db import init_db
@@ -51,7 +51,7 @@ app.register_blueprint(auth_bp, url_prefix="/auth")
 app.register_blueprint(pantry_bp, url_prefix="/pantry")
 app.register_blueprint(others_bp, url_prefix="/others")
 app.register_blueprint(prediction_bp, url_prefix="/prediction")
-app.register_blueprint(recipe_bp, url_prefix="/recipe")
+# app.register_blueprint(recipe_bp, url_prefix="/recipe")
 
 # Run the app
 if __name__ == "__main__":
